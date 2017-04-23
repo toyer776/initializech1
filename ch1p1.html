@@ -1,0 +1,139 @@
+﻿<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>ch.1</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="jquery-1.11.3.js"></script>
+
+<script>
+$(document).ready(function() { // do not delete this line
+	
+	var progress = 0;
+
+		var txt;
+
+
+
+		function eventHandler() {
+
+
+		switch (progress) {
+ 
+
+		case 0:
+
+        		txt = "如果看過鬼故事，很多老土橋段，也是從失蹤和奇怪的訊息開始的。";
+		time="23:00";
+
+        		break;
+
+
+    		case 1:
+
+        		txt = "楠信收到那個訊息時，正是晚上十一點。正疑著自己或許是唯一，他很快便發現其他人也收到同樣的訊息。整條訊息內容就只有一張畫質不良的照片。";
+
+		time="23:00";
+
+        		break;
+  
+
+  		case 2:
+
+        		txt = "兩小時後，未眠的眾人打開了私人聊天室，談論起那奇怪的照片來。";
+
+		time="01:00";
+	
+		break;
+
+
+  		case 3:
+
+        		txt = "這聊天室大多時候都是六人上線，但現在，只有五人。";
+ 
+		time="01:00";
+
+       		break;
+
+
+  		case 4:
+
+		$('#timebox').fadeOut(1000);
+  		$('#speech').fadeOut(1000,function(){  window.location = 'ch1p2.html'});
+
+       		break;
+
+
+
+        }
+  		      progress++;
+		        $('#speech').html(txt);
+		        $('#timebox').html(time);
+		　　}
+
+		$('#speech').click(eventHandler);
+
+	
+		
+
+}); 
+
+// do not delete this line
+
+
+
+</script>
+
+
+<style>
+
+#timebox {
+
+	width: 600px;
+
+	height: auto;
+
+	padding: 10px;
+
+}
+
+
+#speech{
+	cursor: pointer;
+
+	padding: 10px;
+	width: 600px;
+
+	height: 600px;
+
+	border: 1px solid black;
+
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+	<div id="timebox">第一章
+	</div>
+
+	<div id="speech">
+	三塘
+	<br>
+	沒有人知道為甚麼那張照片會出現在訊息裡。
+	</div>
+
+
+</body>
+
+</html>

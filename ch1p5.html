@@ -1,0 +1,413 @@
+﻿<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>ch.1</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="jquery-1.11.3.js"></script>
+
+<script>
+$(document).ready(function() { // do not delete this line
+	
+	var progress = 0;
+
+		var txt;
+
+
+
+		function eventHandler() {
+
+
+		switch (progress) {
+ 
+
+		case 0:
+
+        		txt = "三人在山洞裡依然沒有多少說話。手機的照明加上狹窄的空間，或多或少也讓三個男子畏懼起來。乾燥的石壁倒不似水壩附近應有的模樣，沿著燈光，依稀可看見地上的泥跡，楠信放慢腳步察看，凌亂的足印似乎很新淨。";
+		time="04:50";
+
+        		break;
+
+
+    		case 1:
+
+        		txt = "「幹嘛停下了？」夾在中間的季樂見楠信停下，不禁問道。";
+
+		time="04:51";
+
+        		break;
+  
+
+  		case 2:
+
+        		txt = "「前面太窄了。」楠信把手機的燈伸向變成隙縫大小的前路。「要打側走，而且沒法邊拿著手機走。」";
+
+		time="04:51";
+	
+		break;
+
+
+  		case 3:
+
+        		txt = "「看你們怎樣想。」祟榛又讓他們看了下自己的手機。「妍兒的訊息快害我當機了。」等等等等等……";
+ 
+		time="04:51";
+
+       		break;
+
+
+
+  		case 4:
+
+        		txt = "「這樣吧，」楠信探看著隙縫。「我們試走幾步，然後停下用手機照著看看，再前進，感覺沒完沒了的話就只好回頭。」";
+ 
+		time="04:51";
+
+       		break;
+
+
+  		case 5:
+
+        		txt = "一直拍著胸口的崇榛倒是沒有意見。";
+ 
+		time="04:52";
+
+       		break;
+
+
+  		case 6:
+
+        		txt = "三人笨拙地在隙縫橫行起來，比起行走，他們更似伏在石牆爬行，還得不時停下照明，確認前方。";
+ 
+		time="04:55";
+
+       		break;
+
+
+  		case 7:
+
+        		txt = "大概是空間狹小，空氣鬱悶，本來渾身發冷的楠信也覺得憋悶起來，只是這時沒有空間可以脫下外套，只得硬著頭皮前進。";
+ 
+		time="04:55";
+
+       		break;
+
+
+  		case 8:
+
+        		txt = "然而整個世界一直也安靜如死寂，因此更顯得他們狼狽吵鬧。衣物擦過石壁，發出索索的聲音，他們的細微氣喘在山洞中也份外明顯。";
+ 
+		time="04:55";
+
+       		break;
+
+
+  		case 9:
+
+        		txt = "「崇榛還好嗎？」爬了好一段時間，楠信想起崇榛是抱病之身，不由得問道。";
+ 
+		time="05:08";
+
+       		break;
+
+
+  		case 10:
+
+        		txt = "「我沒事。」安穩的聲音。";
+ 
+		time="05:08";
+
+       		break;
+
+
+  		case 11:
+
+        		txt = "「我又要開燈了，先停一下。」楠信調整好手臂的位置，握好手機。";
+ 
+		time="05:08";
+
+       		break;
+
+
+  		case 12:
+
+        		txt = "「快開燈吧，陰森得要死要死的。」季樂的聲音聽起來急燥得很。";
+ 
+		time="05:08";
+
+       		break;
+
+
+
+  		case 13:
+
+        		txt = "楠信滑了一下手機螢幕，正要打開照明功能，手機卻突然震動起來，他差點要把手機摔掉。";
+ 
+		time="05:08";
+
+       		break;
+
+
+
+  		case 14:
+
+        		txt = "噹噹噹的手機聲，響徹了整個山洞。";
+ 
+		time="05:08";
+
+       		break;
+
+
+
+  		case 15:
+
+        		txt = "楠信沒有回話，也沒有多餘的心情看螢幕了，直接按下通話鍵，把手機附向耳朵：「喂？」";
+ 
+		time="05:08";
+
+       		break;
+
+
+  		case 16:
+
+        		txt = "救我！";
+ 
+		time=" ";
+
+       		break;
+
+
+  		case 17:
+
+        		txt = "救我！救我！";
+ 
+		time=" ";
+
+       		break;
+
+
+  		case 18:
+
+        		txt = "「芷希？」楠信的言語啞在口型裡。";
+ 
+		time="05:09";
+
+       		break;
+
+
+  		case 17:
+
+        		txt = "救命啊！我不想死！";
+ 
+		time=" ";
+
+       		break;
+
+
+
+  		case 18:
+
+        		txt = "「你在哪裡？」楠信試著鎮定。「宇戚呢？」";
+ 
+		time="05:09";
+
+       		break;
+
+
+
+  		case 19:
+
+        		txt = "是祟榛！";
+ 
+		time=" ";
+
+       		break;
+
+
+
+  		case 20:
+
+        		txt = "都是他做的！";
+ 
+		time=" ";
+
+       		break;
+
+
+  		case 21:
+
+        		txt = "「甚麼⋯⋯？」楠信仍未反應過來，對方已掛了電話。";
+ 
+		time="05:09";
+
+       		break;
+
+
+  		case 22:
+
+        		txt = "「⋯⋯是誰？」季樂的聲音微小到幾乎不能入耳。";
+ 
+		time="05:09";
+
+       		break;
+
+
+  		case 23:
+
+        		txt = "楠信深吸一口氣，打開手機照明，放到三人中間。「是芷希，崇榛你⋯⋯」";
+ 
+		time="05:09";
+
+       		break;
+
+
+  		case 24:
+
+        		txt = "「芷希怎可能打得進來？這裡沒有訊號、訊號、訊號……」季樂顫著肩膀。「喂，信哥⋯⋯你嚇傻了？」";
+ 
+		time="05:09";
+
+       		break;
+
+
+
+  		case 25:
+
+        		txt = "「你看看你後面。」楠信抿唇。";
+ 
+		time="05:09";
+
+       		break;
+
+
+
+		case 26:
+
+        		txt = "季樂艱難地摸著牆壁，在隙縫中轉身。";
+ 
+		time="05:09";
+
+       		break;
+
+
+		case 27:
+
+        		txt = "祟榛";
+ 
+		time="05:09";
+
+       		break;
+
+
+
+		case 28:
+
+        		txt = "祟榛不見了。";
+ 
+		time="05:10";
+
+       		break;
+
+
+
+		case 29:
+
+		txt = "時間還原　第一章　完。";
+ 
+		time="完結";
+
+
+       		break;
+
+
+  		//case 17:
+
+ 		//window.location = 'ch1p4.html';
+       		//break;
+
+
+  		//case 4:
+
+		//$('#timebox').fadeOut(1000);
+  		//$('#speech').fadeOut(1000,function(){  window.location = 'ch1p2.html'});
+
+       		//break;
+
+
+
+        }
+  		      progress++;
+		        $('#speech').html(txt);
+		        $('#timebox').html(time);
+		　　}
+
+		$('#speech').click(eventHandler);
+
+	
+		
+
+}); 
+
+// do not delete this line
+
+
+
+</script>
+
+
+<style>
+
+body{
+background-color: black;
+color: white;
+}
+
+#timebox {
+
+	width: 600px;
+
+	height: auto;
+
+	padding: 10px;
+
+}
+
+
+#speech{
+	cursor: pointer;
+
+	padding: 10px;
+	width: 600px;
+
+	height: 600px;
+
+	border: 1px solid white;
+
+	
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+	<div id="timebox">04:45...
+	</div>
+
+	<div id="speech">
+山洞一如既往的陰暗，空氣中有點霉味，但卻感覺不到濕棄，嗅起來像是舊貨的味道──就像中午的那份報紙。楠信總覺得越走越冷，好像走進了冰洞似的，身後的季樂倒是連連打了幾個噴嚏。
+	</div>
+
+
+</body>
+
+</html>

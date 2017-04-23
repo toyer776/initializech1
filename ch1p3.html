@@ -1,0 +1,263 @@
+﻿<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>ch.1</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="jquery-1.11.3.js"></script>
+
+<script>
+$(document).ready(function() { // do not delete this line
+	
+	var progress = 0;
+
+		var txt;
+
+
+
+		function eventHandler() {
+
+
+		switch (progress) {
+ 
+
+		case 0:
+
+        		txt = "杉唐，水庫郊區，三風道五號。";
+		time="03:30";
+
+        		break;
+
+
+    		case 1:
+
+        		txt = "等到五人集合已經是凌晨三點多。這時份的樹林尤其陰冷，大家都有備而來似的穿上厚衣物。楠信穿了件普通的運動外套，宇戚和他沒兩樣，兩人都黑沈沈。季樂穿了件鮮橙色的風衣，吵吵鬧鬧的色彩正如其人，他是最早待在路口的人，一直在刷手機，楠信湊近一看，全都是有關杉唐以前的怪談。";
+
+		time="03:30";
+
+        		break;
+  
+
+  		case 2:
+
+        		txt = "他還看得一臉興高采烈，似乎早已忘記自己是來尋人。此情此景，楠信只希望最後要讓他們報警的人不是季樂。";
+
+		time="03:30";
+	
+		break;
+
+
+  		case 3:
+
+        		txt = "芷希是和宇戚一起來的。最遲的是崇榛，大概比原定時間遲了二十分鐘左右。";
+ 
+		time="03:50";
+
+       		break;
+
+
+
+  		case 4:
+
+        		txt = "他一到來，就上下打量著芷希，陰陽怪氣的笑道：「我們是去深夜派對？」";
+ 
+		time="03:51";
+
+       		break;
+
+
+  		case 5:
+
+        		txt = "芷希抓著毛外套的衣角，嗔道：「要你管？」";
+ 
+		time="03:51";
+
+       		break;
+
+
+  		case 6:
+
+        		txt = "崇榛沒有與她吵下去，兩手插在自己風衣的口袋，朝樹林的方向道：「走吧，看過地圖是那邊。」";
+ 
+		time="03:51";
+
+       		break;
+
+
+  		case 7:
+
+        		txt = "夜裡樹林陰深，大家一路上無話。";
+ 
+		time="03:55";
+
+       		break;
+
+
+  		case 8:
+
+        		txt = "路本來還挺好走，有水泥路，公路的燈光多多少少也滲進了林葉之間。然而朝著崇榛所指的方向走了十分鐘左右，水泥路就到盡頭了。照這方向走下去，就只有一片樹林，沒有小路，沒有足跡，深處也沒有光線。";
+ 
+		time="04:10";
+
+       		break;
+
+
+  		case 9:
+
+        		txt = "「崇榛你亂指的吧？」最先發作的是芷希。";
+ 
+		time="04:11";
+
+       		break;
+
+  		case 10:
+
+        		txt = "「沒有。我手錶有指南針。」崇榛斜眼看著季樂。「即使有信號也不必浪費功夫了，那種廢墟衛星地圖上是沒有的。」";
+ 
+		time="04:11";
+
+       		break;
+
+
+  		case 11:
+
+        		txt = "季樂才停止瞎點螢幕的手指，但他吞了吞口水，道：「肯定要走下去嗎？剛剛看到不少人說那裡有鬼，有鬼……」";
+ 
+		time="04:12";
+
+       		break;
+
+
+  		case 12:
+
+        		txt = "芷希用力抓住了自己短裙的一角。宇戚趁機挨近了芷希一點，道：「一路上也有打電話給妍兒和她家，沒有音訊，報警更快吧。」";
+ 
+		time="04:12";
+
+       		break;
+
+
+
+  		case 13:
+
+        		txt = "「還沒到足夠的失蹤時間，而且被學院知道，問起的話怎麼辦？」崇榛一臉淡漠，同時摸了摸自己的胸口。";
+ 
+		time="04:12";
+
+       		break;
+
+
+
+  		case 14:
+
+        		txt = "楠信見大家你一言我一語卻沒有結果，嘆道：「不然宇戚你就陪芷希在這裡等一下好了，我和他們進去看看情況再說。」";
+ 
+		time="04:12";
+
+       		break;
+
+
+
+  		case 15:
+
+        		txt = "宇戚亮了眼睛，芷希倒是叉腰道：「好啊，要是半小時內你們沒有回來，我就走了。」";
+ 
+		time="04:12";
+
+       		break;
+
+
+  		case 16:
+
+        		txt = "三人就這拋下他們，朝樹林走去。";
+ 
+		time="04:12";
+
+       		break;
+
+
+  		case 17:
+
+ 		window.location = 'ch1p4.html';
+       		break;
+
+
+  		//case 4:
+
+		//$('#timebox').fadeOut(1000);
+  		//$('#speech').fadeOut(1000,function(){  window.location = 'ch1p2.html'});
+
+       		//break;
+
+
+
+        }
+  		      progress++;
+		        $('#speech').html(txt);
+		        $('#timebox').html(time);
+		　　}
+
+		$('#speech').click(eventHandler);
+
+	
+		
+
+}); 
+
+// do not delete this line
+
+
+
+</script>
+
+
+<style>
+
+#timebox {
+
+	width: 600px;
+
+	height: auto;
+
+	padding: 10px;
+
+}
+
+
+#speech{
+	cursor: pointer;
+
+	padding: 10px;
+	width: 600px;
+
+	height: 600px;
+
+	border: 1px solid black;
+
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+	<div id="timebox">03:30...
+	</div>
+
+	<div id="speech">
+	.......
+	</div>
+
+
+</body>
+
+</html>
