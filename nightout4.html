@@ -1,0 +1,171 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>第二夜</title>
+
+<script src="jquery-1.11.3.js"></script>
+
+<script>
+$(document).ready(function() {
+	var timer = setInterval(eventHandler, 1000);
+	var counter = 0;
+	function eventHandler() {
+		counter++;
+		if(counter==4) {
+			$('#sole').html('我已經到了，你們人在哪？');
+		}
+		if(counter==10) {
+			$('#gloria').html('你比約定早到了半小時吧？其他人連B22也沒到');
+		}
+		if(counter==15) {
+			$('#sole').html('誰有那個歐文卡爾時間等啊，我要找安達啊，先走了，森林那邊等');
+		}
+		if(counter==19) {
+			$('#gloria').html('........');
+		}
+		if(counter==22) {			$('#hisa').html('hisa@Tksi:kNN1:s9Yt:ILj2...');
+		}
+        
+		if(counter==25) {			$('#gloria').html('海莎？你怎麼來了？');
+		}
+
+		if(counter==29) {			$('#hisa').html('在');                       }
+        
+        if(counter==32) {			$('#hisa').html('瑪圖說會出事');               }
+        
+        if(counter==37) {			$('#gloria').html('他為甚麼會找你聊這個了？？？？？？');
+		$('#msg').html('我給他把來過追別');
+        }
+        
+
+        if(counter==42) {			
+        $('#hisa').html('我應該在你附近了');
+        $('#msg').html('我給他把來過追別我給他把來過追別');
+        }
+        
+        
+        if(counter==44) {			
+        $('#msg').html('我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別我給他把來過追別');
+        }
+                
+        if(counter==48){
+            $('#sole').html('deleted')
+           $('#sole').fadeOut('slow').fadeIn('fast', function() {$(this).css({ color:'red' }) })
+        }
+        
+        if(counter==50){
+            $('#gloria').html('索里？？？？？？');
+        }
+    
+        if(counter==55){
+        $('#atan').html('Atan@3333.3333.3333.3333');
+        }
+        
+        if(counter==57){
+        $('#gloria').html('安達你在哪？？？？');
+        }
+        
+        
+        if(counter==62){
+        $('#atan').html('這是我和他的事，你們不要插手');
+        }
+        
+        if(counter==67){
+        $('#atan').html('他是我的大貓貓:)');
+        }
+        
+        if(counter==71){
+        $('#atan').html('他是我一個人的大貓貓:)');
+        $('body').css("background-color","red");
+	}
+        
+        if(counter==67){
+        $('#atan').html('他是我一個人的大貓貓:)');
+        $('body').css("background-color","red");
+	}   
+        
+        if(counter==76){
+        $("#speech").hide()
+        $("#timebox").html('Chat deleted')
+        }
+        
+});
+</script>
+
+<style>
+#timebox {
+	width: 600px;
+	height: auto;
+	padding: 10px;
+}
+#speech{
+	padding: 10px;
+	width: 600px;
+	height: 600px;
+	border: 1px solid black;
+}
+#sole,#gloria,#hisa,#random,#atan{
+	margin: 10px;
+	margin-bottom:20px;
+	padding: 10px;
+	height: 50px;
+	border:  1px solid black;
+}
+</style>
+</head>
+
+<body>
+
+	<div id="timebox">Temp chat#29299__13:35 ServerB22
+	</div>
+
+	<div id="speech">
+
+
+
+	<div id="sole">
+	Sole@Tksi:2dF2:k8JB:WD2D...
+        <div id="word"></div>
+	</div>
+
+
+
+	<div id="gloria">
+	Gloria@Tksi:kNN1:wOP9:sNs2...
+	</div>
+
+
+
+	<div id="random">
+	Offline
+	</div>
+
+
+
+	<div id="hisa">
+	Offline
+	</div>
+
+
+
+	<div id="atan">
+	Offline
+	</div>
+
+
+
+
+
+	</div>
+
+<div id=msg>
+    </div>
+    
+</body>
+
+</html>
