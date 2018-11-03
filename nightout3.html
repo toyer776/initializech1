@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>第二夜</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="jquery-1.11.3.js"></script>
+
+<script>
+$(document).ready(function() { // do not delete this line
+	
+	var progress = 0;
+		var txt;
+		function eventHandler() {
+		switch (progress) {
+ 
+		case 0:
+        		txt = "長駐美洲更是受到索里分局長的窮追猛打，被逼四出搜尋索里分局長，比當年百宜前分局長有過之而無不及。";
+        		break;
+    	case 1:
+        		txt = "不過死神似乎搜索無果，";
+        		break;
+  
+  		case 2:
+        		txt = "美洲的分局長偷偷出下策，就是僱用外援。";	
+		break;
+                
+  		case 3:
+        		txt = "「幸運帽人力資源公司」";
+       		break;
+                
+		case 4:
+        		txt = "此事似乎沒有經高層同意，而且出乎意料地，B1分局長跟顧問是站在同樣的反對陣營。然而無論如何，也沒有辦法阻止到美洲分局要找精靈的決心。";
+       		break;
+                
+    	case 5:
+        		alert("你收到了幸運帽人力資源公司的信息！");
+       		break;
+                
+                
+        case 6:
+        		txt = "前去幫助索里吧";
+                time="<a href="nightout5.html">尋找幸運帽</a>";
+       		break;
+                
+        case 7:
+        		txt = "雖然可能會被伊路贊分局長和卡魯普斯顧問責怪";
+       		break;
+                
+  		case 8:
+		$('#timebox').fadeOut(1000);
+  		$('#speech').fadeOut(1000,function(){  window.location = 'nightout4.html'});
+       		break;
+        }
+  		      progress++;
+		        $('#speech').html(txt);
+		        $('#timebox').html(time);
+		　　}
+		$('#speech').click(eventHandler);
+	
+		
+}); 
+// do not delete this line
+</script>
+
+
+<style>
+#timebox {
+	width: 600px;
+	height: auto;
+	padding: 10px;
+}
+#speech{
+	cursor: pointer;
+	padding: 10px;
+	width: 600px;
+	height: 600px;
+	border: 1px solid black;
+}
+</style>
+
+
+</head>
+
+
+<body>
+
+	<div id="timebox">2 nd Nov 2018
+	</div>
+
+	<div id="speech">
+「安達分局長失蹤」變成了死神局的頭條。
+	</div>
+
+
+</body>
+
+</html>
